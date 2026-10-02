@@ -6,9 +6,12 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+          I am SACHIN KUMAR, currently pursuing BCA from Roorkee Institute of
+          Technology. Having completed my secondary and higher secondary
+          education in science, I have built a strong passion for technology,
+          computer science, and software development. I enjoy learning new
+          skills, solving problems, and building practical projects while seeking
+          industry-level experience.
         </p>
       </div>
     </div>

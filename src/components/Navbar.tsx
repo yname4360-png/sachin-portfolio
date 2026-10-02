@@ -42,16 +42,18 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
-        </a>
-        <a
-          href="mailto:example@mail.com"
-          className="navbar-connect"
-          data-cursor="disable"
-        >
-          example@mail.com
-        </a>
+        <div className="navbar-brand">
+          <a href="/#" className="navbar-title" data-cursor="disable">
+            SACHIN KUMAR
+          </a>
+          <a
+            href="mailto:yname4360@gmail.com"
+            className="navbar-connect"
+            data-cursor="disable"
+          >
+            yname4360@gmail.com
+          </a>
+        </div>
         <ul>
           <li>
             <a data-href="#about" href="#about">
@@ -59,8 +61,18 @@ const Navbar = () => {
             </a>
           </li>
           <li>
+            <a data-href="#whatido" href="#whatido">
+              <HoverLinks text="SKILLS" />
+            </a>
+          </li>
+          <li>
+            <a data-href="#education" href="#education">
+              <HoverLinks text="EDUCATION" />
+            </a>
+          </li>
+          <li>
             <a data-href="#work" href="#work">
-              <HoverLinks text="WORK" />
+              <HoverLinks text="CERTIFICATIONS" />
             </a>
           </li>
           <li>

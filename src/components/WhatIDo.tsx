@@ -9,7 +9,7 @@ const WhatIDo = () => {
   };
   useEffect(() => {
     if (ScrollTrigger.isTouch) {
-      containerRef.current.forEach((container) => {
+      containerRef.current.forEach((container: HTMLDivElement | null) => {
         if (container) {
           container.classList.remove("what-noTouch");
           container.addEventListener("click", () => handleClick(container));
@@ -17,7 +17,7 @@ const WhatIDo = () => {
       });
     }
     return () => {
-      containerRef.current.forEach((container) => {
+      containerRef.current.forEach((container: HTMLDivElement | null) => {
         if (container) {
           container.removeEventListener("click", () => handleClick(container));
         }
@@ -25,12 +25,12 @@ const WhatIDo = () => {
     };
   }, []);
   return (
-    <div className="whatIDO">
+    <div className="whatIDO" id="whatido">
       <div className="what-box">
         <h2 className="title">
-          W<span className="hat-h2">HAT</span>
+          S<span className="hat-h2">KILLS &</span>
           <div>
-            I<span className="do-h2"> DO</span>
+            E<span className="do-h2">XPERTISE</span>
           </div>
         </h2>
       </div>
@@ -60,7 +60,7 @@ const WhatIDo = () => {
           </div>
           <div
             className="what-content what-noTouch"
-            ref={(el) => setRef(el, 0)}
+            ref={(el: HTMLDivElement | null) => setRef(el, 0)}
           >
             <div className="what-border1">
               <svg height="100%">
@@ -87,31 +87,29 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>DEVELOP</h3>
-              <h4>Description</h4>
+              <h3>PROGRAMMING</h3>
+              <h4>Core Software & IT Skills</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae.
+                Developing core programming skills in C, Python, and Java, alongside Data Structures & Algorithms, DBMS, Operating Systems, and Web Technologies.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Three.js</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Css</div>
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Next.js</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySql</div>
+                <div className="what-tags">C Programming</div>
+                <div className="what-tags">Basic Python</div>
+                <div className="what-tags">Basic Java</div>
+                <div className="what-tags">DSA (Data Structures)</div>
+                <div className="what-tags">Computer Fundamentals</div>
+                <div className="what-tags">DBMS</div>
+                <div className="what-tags">Operating Systems</div>
+                <div className="what-tags">Computer Networks</div>
+                <div className="what-tags">Web Technologies</div>
               </div>
               <div className="what-arrow"></div>
             </div>
           </div>
           <div
             className="what-content what-noTouch"
-            ref={(el) => setRef(el, 1)}
+            ref={(el: HTMLDivElement | null) => setRef(el, 1)}
           >
             <div className="what-border1">
               <svg height="100%">
@@ -128,22 +126,23 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DESIGN</h3>
-              <h4>Description</h4>
+              <h3>SUPPORT & TOOLS</h3>
+              <h4>Office & Technical Support</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                High-efficiency technical chat and email support, advanced MS Office & Google Workspace management, data entry operations, and fast 45 WPM typing.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
-                <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
-                <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                <div className="what-tags">MS Excel (Advance)</div>
+                <div className="what-tags">MS Word (Advance)</div>
+                <div className="what-tags">Google Sheets / Docs</div>
+                <div className="what-tags">Chat / Email Support (Advance)</div>
+                <div className="what-tags">Data Entry</div>
+                <div className="what-tags">Typing (45 WPM, 95% Acc.)</div>
+                <div className="what-tags">Communication & Public Speaking</div>
+                <div className="what-tags">Creative Content Design</div>
+                <div className="what-tags">Hindi (Fluent)</div>
+                <div className="what-tags">English (Basic) / Hinglish</div>
               </div>
               <div className="what-arrow"></div>
             </div>

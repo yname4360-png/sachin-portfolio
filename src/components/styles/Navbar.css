@@ -30,15 +30,25 @@
   font-weight: 600;
   cursor: pointer;
 }
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+}
 .navbar-connect {
-  position: absolute;
-  display: none;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 15px;
-  letter-spacing: 1px;
-  font-weight: 500;
+  position: static;
+  display: inline-block;
+  transform: none;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: var(--accentColor);
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+.navbar-connect:hover {
+  opacity: 1;
 }
 .navbar-title {
   font-weight: 700;
@@ -63,7 +73,8 @@
 }
 @media only screen and (min-width: 900px) {
   .navbar-connect {
-    display: block;
+    display: inline-block;
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -75,7 +86,7 @@
     font-size: 16px;
   }
   .navbar-connect {
-    font-size: 16px;
+    font-size: 14px;
   }
   .navbar-title {
     font-size: 18px;

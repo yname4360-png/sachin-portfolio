@@ -10,58 +10,61 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:example@mail.com" data-cursor="disable">
-                example@mail.com
+              <a href="mailto:yname4360@gmail.com" data-cursor="disable">
+                yname4360@gmail.com
               </a>
             </p>
-            <h4>Phone</h4>
-            <p>
-              <a href="tel:+9199999999" data-cursor="disable">
-                +91 99999 99999
-              </a>
+            <h4>Location</h4>
+            <p style={{ fontSize: "16px", color: "var(--accentColor)", marginTop: "4px" }}>
+              Roorkee, Dehradun, Uttarakhand, India
             </p>
+            <h4 style={{ marginTop: "16px" }}>Social Profiles</h4>
+            <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "4px" }}>
+              <a
+                href="https://github.com/yname4360-png"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor="disable"
+                className="contact-social"
+                style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}
+              >
+                GitHub <MdArrowOutward />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sachin-kumar-8b13bb3a1/?isSelfProfile=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor="disable"
+                className="contact-social"
+                style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}
+              >
+                LinkedIn <MdArrowOutward />
+              </a>
+            </div>
           </div>
           <div className="contact-box">
-            <h4>Social</h4>
+            <h4>Academic Reference</h4>
+            <p style={{ fontWeight: 600, fontSize: "18px", marginBottom: "4px" }}>
+              Prof. (Dr.) Parag Jain
+            </p>
+            <p style={{ fontSize: "14px", opacity: 0.8, marginBottom: "8px" }}>
+              Director, Roorkee Institute of Technology
+            </p>
             <a
-              href="https://github.com"
-              target="_blank"
+              href="mailto:director@ritroorkee.com"
               data-cursor="disable"
               className="contact-social"
+              style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}
             >
-              Github <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Linkedin <MdArrowOutward />
-            </a>
-            <a
-              href="https://x.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
+              director@ritroorkee.com <MdArrowOutward />
             </a>
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Moncy Yohannan</span>
+              Designed and Developed <br /> for <span>Sachin Kumar</span>
             </h2>
             <h5>
-              <MdCopyright /> 2024
+              <MdCopyright /> 2026
             </h5>
           </div>
         </div>
